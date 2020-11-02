@@ -15,7 +15,7 @@ const connection = mysql.createConnection({
   database: config.database,
 });
 
-(async () => {
+module.exports = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto("http://coop.cbnu.ac.kr/index.php?mid=m0302");
@@ -24,7 +24,6 @@ const connection = mysql.createConnection({
   var data = await page.evaluate(() => {
     return getData();
   });
-
 
   data.map((d) => {
     const query = connection.query("INSERT INTO restaurant SET ?", d, function (
@@ -35,4 +34,4 @@ const connection = mysql.createConnection({
     });
   });
   await browser.close();
-})();
+};

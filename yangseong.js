@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
   database: config.database,
 });
 
-(async () => {
+module.exports = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto(
@@ -48,4 +48,4 @@ const connection = mysql.createConnection({
     });
   });
   await browser.close();
-})();
+};
