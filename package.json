@@ -1,0 +1,24 @@
+{
+  "name": "Crawler-Restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CBNU-CMI/Crawler-Restaurant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CBNU-CMI/Crawler-Restaurant/issues"
+  },
+  "homepage": "https://github.com/CBNU-CMI/Crawler-Restaurant#readme",
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "puppeteer": "^5.4.1"
+  }
+}
