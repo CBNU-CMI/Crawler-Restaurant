@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
   database: config.database,
 });
 
-(async () => {
+module.exports = async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   await page.goto("http://coop.cbnu.ac.kr/index.php?mid=m0304");
@@ -33,4 +33,4 @@ const connection = mysql.createConnection({
     });
   });
   await browser.close();
-})();
+};
