@@ -14,6 +14,8 @@ A CBNU cafeteria menus scraper for Node.js
 npm start
 ```
 
+## [License](https://github.com/CBNU-CMI/Crawler-Restaurant/blob/master/LICENSE)
+
 MIT License
 
 Copyright (c) CBNU-CMI
